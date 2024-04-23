@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERSOR DE MONEDAS RICARDO_FLOREZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagenesReto2/ALULA-ORACLE.png" alt="Logo">
+        </div>
+
+    <div class="converter">
+        <h1>CONVERSOR DE MONEDAS</h1>
+        <div class="input-group">
+            <label for="amount">Cantidad:</label>
+            <input type="number" id="amount" placeholder="Ingrese la cantidad">
+        </div>
+        <div class="input-group">
+            <label for="from">De:</label>
+            <select id="from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="COP">COP</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="to">A:</label>
+            <select id="to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="COP">COP</option>
+            </select>
+        </div>
+        <button onclick="convert()">Convertir</button>
+        <div id="result"></div>
+    </div>
+    <footer>
+        <p>JOSE RICARDO FLOREZ CESPEDES
+        <p>ESTUDANTE ALURA LATAM - ORACLE NEXT ONE EDUCATION</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
